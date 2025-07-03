@@ -28,6 +28,7 @@ class Mecard extends StatelessWidget {
               children: [
                 Photo(), // widget for photo imported.
                 const SizedBox(height: 20),
+                // Font style for the text.
                 Text(
                   "Aakrish Lama",
                   style: GoogleFonts.vollkorn(
