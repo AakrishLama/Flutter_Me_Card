@@ -31,7 +31,7 @@ class Mecard extends StatelessWidget {
                   backgroundImage: AssetImage("assets/imbobbymom.jpg"),
                 ),
                 const SizedBox(height: 20),
-                ContactInfo(),  // Use the widget here
+                ContactInfo(),  // widget for contact info
               ],
             ),
           ),

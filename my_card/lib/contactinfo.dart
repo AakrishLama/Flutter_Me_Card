@@ -18,9 +18,11 @@ class ContactInfo extends StatelessWidget {
             blurRadius: 4,
             offset: const Offset(0, 2),
           ),
-        ]
+        ],
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
             "Student at Linneaus University",
@@ -31,17 +33,38 @@ class ContactInfo extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          Text("E-mail: al226na@student.lnu.se"),
-          const SizedBox(height: 8),
-          Text("Phone: 046-097-098-45"),
-          const SizedBox(height: 8),
-          Text(
-            "Web: https://lnu.se",
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.lightBlueAccent,
-              decoration: TextDecoration.underline,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Row(
+              children: [
+                Icon(Icons.email, color: Colors.grey[400]),
+                const SizedBox(width: 8), 
+                const Text("E-mail: al226na@student.lnu.se"),
+              ],
             ),
+          ),
+
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Icon(Icons.phone, color: Colors.grey[400]),
+              const SizedBox(width: 8),
+              Text("Phone: 046-097-098-45"),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Icon(Icons.web, color: Colors.grey[400]),
+              const SizedBox(width: 8),
+              Text(
+                "Web: https://lnu.se",
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),
+              ),
+            ],
           ),
         ],
       ),
