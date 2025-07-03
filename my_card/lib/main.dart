@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import "package:my_card/contactinfo.dart"; // Import the contact info widget
+import "photo.dart";
+import "package:google_fonts/google_fonts.dart";
 
 void main() {
   runApp(const Mecard());
@@ -24,14 +26,15 @@ class Mecard extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text("hello"),
-                Text("my cardey"),
-                CircleAvatar(
-                  radius: 150,
-                  backgroundImage: AssetImage("assets/imbobbymom.jpg"),
-                ),
+                Photo(), // widget for photo imported.
                 const SizedBox(height: 20),
-                ContactInfo(),  // widget for contact info
+                Text(
+                  "Aakrish Lama",
+                  style: GoogleFonts.vollkorn(
+                    fontSize: 30,
+                  ),
+                ),
+                ContactInfo(), // widget for contact info imported.
               ],
             ),
           ),
