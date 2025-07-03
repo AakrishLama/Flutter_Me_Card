@@ -1,2 +1,2 @@
 # Flutter_Me_Card
-<img src="assets/ss.png" width="200" />
+![Screenshot](assets/ss.png)
