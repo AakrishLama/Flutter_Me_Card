@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "package:my_card/contactinfo.dart"; // Import the contact info widget
 
 void main() {
   runApp(const Mecard());
@@ -20,25 +21,20 @@ class Mecard extends StatelessWidget {
         ),
         body: Center(
           child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text("hello"),
-              Text("my cardey"),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.asset(
-                  "assets/imbobbymom.jpg",
-                )
-              ),
-              CircleAvatar(
-                radius: 150,
-                backgroundImage: AssetImage("assets/imbobbymom.jpg"),
-              )
-              
-            ],
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text("hello"),
+                Text("my cardey"),
+                CircleAvatar(
+                  radius: 150,
+                  backgroundImage: AssetImage("assets/imbobbymom.jpg"),
+                ),
+                const SizedBox(height: 20),
+                ContactInfo(),  // Use the widget here
+              ],
+            ),
           ),
-          )
         ),
       ),
     );
