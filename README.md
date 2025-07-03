@@ -1,2 +1,2 @@
 # Flutter_Me_Card
-![Screenshot](assets/ss.png)
+![Alt text](https://github.com/AakrishLama/Flutter_Me_Card/blob/main/ss.png?raw=true)
