@@ -14,7 +14,7 @@ Features a scrollable layout, circular profile image, and styled contact details
 *** Getting Started ***
 - Clone the repo
 
-- Run flutter pub get to install dependencies
+- Run flutter pub get -> to install dependencies
 
 - Run flutter run to launch the app on your device or emulator
 
